@@ -1,0 +1,33 @@
+---
+title: '"logit_regression"'
+output: html_document
+---
+
+```{r}
+math<-c(0,0,1,1,1)
+pass<-c(0,0,1,1,1)
+all_score<-data.frame(math,pass)
+```
+
+##모델 만들기
+#glm(답(출력데이터~문제(입력),data=이름, family=binomial))
+```{r}
+model<-glm(pass~math,data=all_score,family=binomial)
+summary(model)
+model
+
+```
+```{r}
+##예측하기
+##분류 - 범주형변수 - 이항분류 logistic 회귀
+##타이타닉 날씨나누기는 범주형변수 - 다항분류
+###범주형을 예측  #예로는 생존여부확인, 지연여부확인
+
+dat<-data.frame(math=c(0,0,0,1,1,1,1,0,0))
+pred<-predict(model,newdata = dat,type="response")
+pred  
+
+pred<-as.integer(pred>0.5)
+pred
+```
+
