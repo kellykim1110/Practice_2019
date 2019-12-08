@@ -1,0 +1,65 @@
+---
+title: "Data_vis"
+output: html_document
+---
+install.packages("ggiraphExtra")
+
+```{r }
+library(ggiraphExtra)
+search()
+```
+
+##데이터셋
+* USArrests  데이터셋
+```{r}
+str(USArrests)
+
+```
+
+```{r}
+library(ggplot2)
+ggplot(USArrests,aes(x=Murder))+geom_bar()
+```
+```{r}
+
+ggplot(USArrests,aes(x=Assault))+geom_bar()
+```
+```{r}
+library(tibble)
+
+crime<-rownames_to_column(USArrests,var="state")
+crime$state<-tolower(crime$state)  #소문자로 바꿔주기
+crime
+```
+
+
+install.packages("maps")
+
+
+```{r}
+library(ggplot2)
+library(maps)
+
+state_map<-map_data("state")
+str(state_map)
+
+head(state_map)
+
+crime$Murder
+crime$state
+
+```
+
+install.packages("mapproj")
+
+```{r}
+library(mapproj)
+library(ggiraphExtra)
+ggChoropleth(data=crime,
+             aes(fill=Murder,
+                 map_id=state),
+                 map=state_map)
+
+
+```
+
