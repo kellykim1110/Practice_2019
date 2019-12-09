@@ -6,8 +6,8 @@
 
 
 ## WHAT I LEARN
-- Python Programming Basics
-- Python Packages and Modules
+- Programming Basics
+- Packages and Modules
 - Data Processing and Analysis
 - Web Cralwling
 - Natural Language Processing
