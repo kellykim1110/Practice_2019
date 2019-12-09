@@ -17,7 +17,7 @@
 <hr>
 
 
-## WHAT I USE FOR PRACTICE USUALLY
+## WHAT I USE FOR PR USUALLY
 <h3> Jupyter Notebook </h3>
 
 <b> Latest : Version 2019.07 | Release Date: July 25, 2019 </b>
@@ -43,6 +43,35 @@
 - TensorFlow : https://www.tensorflow.org/install/pip
 </div>
 <br/>
+
+
+
+
+<h3> R </h3>
+
+<b> Latest :2019. 07 | Release Date: July 05, 2019 </b>
+<br/>
+- R 3.6.1 for Windows
+<br/>
+- Download : https://cran.r-project.org/bin/windows/base/
+<br/>
+
+
+
+
+
+
+<h3> R studio </h3>
+<b> Latest :2019. 07 | Release Date: July 05, 2019 </b>
+<br/>
+
+
+-  RStudio Desktop free version (1.2.1)
+
+<br/>
+- Download : https://www.rstudio.com/products/rstudio/download/
+<br/>
+
 
 
 <hr>
